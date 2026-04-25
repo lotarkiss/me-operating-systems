@@ -24,7 +24,7 @@ int main()
                 printf("%d: Child process\n", getpid());
                 close(fd); // Child only reads
 
-                printf("%d: Checking pipe content\n%d: ", getpid(), getpid());
+                printf("%d: Checking pipe content\n", getpid());
 
                 // File handling like a pipe
                 char buf;
