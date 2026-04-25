@@ -4,6 +4,10 @@
 #include <unistd.h>
 #include <string.h>
 
+/*
+  See man 2 pipe for more details on how to use pipes for interprocess communication.
+*/
+
 int main()
 {
         int pipefd[2];
@@ -35,7 +39,7 @@ int main()
                 printf("%d: Parent process\n", getpid());
                 close(pipefd[0]); // Parent only writes
 
-                printf("%d: Writing to the pipe\n: ", getpid());
+                printf("%d: Writing to the pipe\n", getpid());
 
                 // File handling like a pipe
                 char buffer[100];

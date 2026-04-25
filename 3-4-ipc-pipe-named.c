@@ -7,6 +7,10 @@
 #include <fcntl.h>
 #include <string.h>
 
+/*
+  See man 2 mkfifo for more details on how to use pipes for interprocess communication.
+*/
+
 int main()
 {
         mkfifo("myfifo", 0666); // Create a named pipe (FIFO) with read/write permissions
