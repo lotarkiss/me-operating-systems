@@ -35,7 +35,7 @@ int main()
                 printf("%d: Parent process\n", getpid());
                 close(pipefd[0]); // Parent only writes
 
-                printf("%d: Writing to the pipe\n: ", getpid(), getpid());
+                printf("%d: Writing to the pipe\n: ", getpid());
 
                 // File handling like a pipe
                 char buffer[100];
